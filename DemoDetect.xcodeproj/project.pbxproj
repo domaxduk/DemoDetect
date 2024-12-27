@@ -26,6 +26,8 @@
 		85DA720E2D1E42EA008F5589 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA720D2D1E42EA008F5589 /* HomeView.swift */; };
 		85DA72102D1E4673008F5589 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA720F2D1E4673008F5589 /* DeviceService.swift */; };
 		85DA72132D1E6130008F5589 /* FlipBook in Frameworks */ = {isa = PBXBuildFile; productRef = 85DA72122D1E6130008F5589 /* FlipBook */; };
+		85DA72162D1E6845008F5589 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA72152D1E6845008F5589 /* CameraView.swift */; };
+		85DA72192D1E69A9008F5589 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA72182D1E69A9008F5589 /* Permission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		854F4D9C2D1AADA10088B04F /* macModels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macModels.plist; sourceTree = "<group>"; };
 		85DA720D2D1E42EA008F5589 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		85DA720F2D1E4673008F5589 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		85DA72152D1E6845008F5589 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		85DA72182D1E69A9008F5589 /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		854F4D672D1A57900088B04F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				85DA72172D1E699A008F5589 /* Permission */,
+				85DA72142D1E683A008F5589 /* Camera */,
 				854F4D722D1A81080088B04F /* Location */,
 				854F4D682D1A57940088B04F /* Wifi */,
 			);
@@ -151,6 +157,22 @@
 				854F4D942D1AA2130088B04F /* data.plist */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		85DA72142D1E683A008F5589 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				85DA72152D1E6845008F5589 /* CameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		85DA72172D1E699A008F5589 /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				85DA72182D1E69A9008F5589 /* Permission.swift */,
+			);
+			path = Permission;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,12 +264,14 @@
 				854F4D582D1A57860088B04F /* ViewController.swift in Sources */,
 				854F4D6A2D1A581A0088B04F /* LocalNetworkDetector.swift in Sources */,
 				854F4D702D1A72CA0088B04F /* NetworkUtils.swift in Sources */,
+				85DA72162D1E6845008F5589 /* CameraView.swift in Sources */,
 				854F4D542D1A57860088B04F /* AppDelegate.swift in Sources */,
 				850F972E2D1D044000945740 /* NetServiceExtension.swift in Sources */,
 				85DA720E2D1E42EA008F5589 /* HomeView.swift in Sources */,
 				854F4D562D1A57860088B04F /* SceneDelegate.swift in Sources */,
 				85445AAA2D1AB6830093F7F0 /* Device.swift in Sources */,
 				85DA72102D1E4673008F5589 /* DeviceService.swift in Sources */,
+				85DA72192D1E69A9008F5589 /* Permission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

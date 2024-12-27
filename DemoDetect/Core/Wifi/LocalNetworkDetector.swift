@@ -224,7 +224,3 @@ extension LocalNetworkDetector: NetServiceDelegate {
         return model
     }
 }
-
-#Preview {
-    HomeView(detector: .shared)
-}

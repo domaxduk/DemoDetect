@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCG-aH-K5s" customClass="CameraView" customModule="DemoDetect" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1U-fY-8gc">
                                 <rect key="frame" x="0.0" y="362" width="393" height="128"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
@@ -28,12 +32,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cCG-aH-K5s" secondAttribute="bottom" id="4RO-l6-h3W"/>
                             <constraint firstItem="V1U-fY-8gc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HPm-Go-8eh"/>
                             <constraint firstItem="V1U-fY-8gc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kKL-au-aah"/>
+                            <constraint firstItem="cCG-aH-K5s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mBH-Ae-9lZ"/>
+                            <constraint firstItem="cCG-aH-K5s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mxQ-sN-rJZ"/>
                             <constraint firstItem="V1U-fY-8gc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nUx-Hw-yLe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cCG-aH-K5s" secondAttribute="trailing" id="sGK-G8-xEy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraView" destination="cCG-aH-K5s" id="HE7-kp-lvW"/>
                         <outlet property="mainView" destination="V1U-fY-8gc" id="zNa-Lz-7sO"/>
                     </connections>
                 </viewController>
@@ -48,6 +57,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
