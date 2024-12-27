@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850F972A2D1CFC4400945740 /* iOSMagnetometer in Frameworks */ = {isa = PBXBuildFile; productRef = 850F97292D1CFC4400945740 /* iOSMagnetometer */; };
+		850F972E2D1D044000945740 /* NetServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F972D2D1D044000945740 /* NetServiceExtension.swift */; };
+		850F973B2D1D354900945740 /* SwiftyPing in Frameworks */ = {isa = PBXBuildFile; productRef = 850F973A2D1D354900945740 /* SwiftyPing */; };
+		85445AAA2D1AB6830093F7F0 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85445AA92D1AB6830093F7F0 /* Device.swift */; };
 		854F4D542D1A57860088B04F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854F4D532D1A57860088B04F /* AppDelegate.swift */; };
 		854F4D562D1A57860088B04F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854F4D552D1A57860088B04F /* SceneDelegate.swift */; };
 		854F4D582D1A57860088B04F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854F4D572D1A57860088B04F /* ViewController.swift */; };
 		854F4D5B2D1A57860088B04F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 854F4D5A2D1A57860088B04F /* Base */; };
 		854F4D5D2D1A57870088B04F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854F4D5C2D1A57870088B04F /* Assets.xcassets */; };
 		854F4D602D1A57870088B04F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 854F4D5F2D1A57870088B04F /* Base */; };
+		854F4D6A2D1A581A0088B04F /* LocalNetworkDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854F4D692D1A581A0088B04F /* LocalNetworkDetector.swift */; };
+		854F4D702D1A72CA0088B04F /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854F4D6F2D1A72CA0088B04F /* NetworkUtils.swift */; };
+		854F4D952D1AA2130088B04F /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854F4D942D1AA2130088B04F /* data.plist */; };
+		854F4D9D2D1AADA10088B04F /* iphoneModels.json in Resources */ = {isa = PBXBuildFile; fileRef = 854F4D9A2D1AADA10088B04F /* iphoneModels.json */; };
+		854F4D9E2D1AADA10088B04F /* macVendors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854F4D9B2D1AADA10088B04F /* macVendors.plist */; };
+		854F4D9F2D1AADA10088B04F /* macModels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854F4D9C2D1AADA10088B04F /* macModels.plist */; };
+		85DA720E2D1E42EA008F5589 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA720D2D1E42EA008F5589 /* HomeView.swift */; };
+		85DA72102D1E4673008F5589 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA720F2D1E4673008F5589 /* DeviceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		850F972D2D1D044000945740 /* NetServiceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetServiceExtension.swift; sourceTree = "<group>"; };
+		85445AA92D1AB6830093F7F0 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		854F4D502D1A57860088B04F /* DemoDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		854F4D532D1A57860088B04F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		854F4D552D1A57860088B04F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,15 @@
 		854F4D5C2D1A57870088B04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		854F4D5F2D1A57870088B04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		854F4D612D1A57870088B04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		854F4D692D1A581A0088B04F /* LocalNetworkDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkDetector.swift; sourceTree = "<group>"; };
+		854F4D6B2D1A604D0088B04F /* DemoDetect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoDetect.entitlements; sourceTree = "<group>"; };
+		854F4D6F2D1A72CA0088B04F /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		854F4D942D1AA2130088B04F /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		854F4D9A2D1AADA10088B04F /* iphoneModels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iphoneModels.json; sourceTree = "<group>"; };
+		854F4D9B2D1AADA10088B04F /* macVendors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macVendors.plist; sourceTree = "<group>"; };
+		854F4D9C2D1AADA10088B04F /* macModels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macModels.plist; sourceTree = "<group>"; };
+		85DA720D2D1E42EA008F5589 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		85DA720F2D1E4673008F5589 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +54,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				850F973B2D1D354900945740 /* SwiftyPing in Frameworks */,
+				850F972A2D1CFC4400945740 /* iOSMagnetometer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		850F972C2D1D043400945740 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				850F972D2D1D044000945740 /* NetServiceExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		85445AA82D1AB66F0093F7F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85445AA92D1AB6830093F7F0 /* Device.swift */,
+				85DA720F2D1E4673008F5589 /* DeviceService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		854F4D472D1A57860088B04F = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +98,11 @@
 		854F4D522D1A57860088B04F /* DemoDetect */ = {
 			isa = PBXGroup;
 			children = (
+				854F4D6B2D1A604D0088B04F /* DemoDetect.entitlements */,
+				854F4D672D1A57900088B04F /* Core */,
 				854F4D532D1A57860088B04F /* AppDelegate.swift */,
 				854F4D552D1A57860088B04F /* SceneDelegate.swift */,
+				85DA720D2D1E42EA008F5589 /* HomeView.swift */,
 				854F4D572D1A57860088B04F /* ViewController.swift */,
 				854F4D592D1A57860088B04F /* Main.storyboard */,
 				854F4D5C2D1A57870088B04F /* Assets.xcassets */,
@@ -65,6 +110,45 @@
 				854F4D612D1A57870088B04F /* Info.plist */,
 			);
 			path = DemoDetect;
+			sourceTree = "<group>";
+		};
+		854F4D672D1A57900088B04F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				854F4D722D1A81080088B04F /* Location */,
+				854F4D682D1A57940088B04F /* Wifi */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		854F4D682D1A57940088B04F /* Wifi */ = {
+			isa = PBXGroup;
+			children = (
+				85445AA82D1AB66F0093F7F0 /* Model */,
+				850F972C2D1D043400945740 /* Extension */,
+				854F4D932D1AA2080088B04F /* Data */,
+				854F4D692D1A581A0088B04F /* LocalNetworkDetector.swift */,
+				854F4D6F2D1A72CA0088B04F /* NetworkUtils.swift */,
+			);
+			path = Wifi;
+			sourceTree = "<group>";
+		};
+		854F4D722D1A81080088B04F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		854F4D932D1AA2080088B04F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				854F4D9A2D1AADA10088B04F /* iphoneModels.json */,
+				854F4D9C2D1AADA10088B04F /* macModels.plist */,
+				854F4D9B2D1AADA10088B04F /* macVendors.plist */,
+				854F4D942D1AA2130088B04F /* data.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +167,10 @@
 			dependencies = (
 			);
 			name = DemoDetect;
+			packageProductDependencies = (
+				850F97292D1CFC4400945740 /* iOSMagnetometer */,
+				850F973A2D1D354900945740 /* SwiftyPing */,
+			);
 			productName = DemoDetect;
 			productReference = 854F4D502D1A57860088B04F /* DemoDetect.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +187,7 @@
 				TargetAttributes = {
 					854F4D4F2D1A57860088B04F = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -111,6 +200,10 @@
 				Base,
 			);
 			mainGroup = 854F4D472D1A57860088B04F;
+			packageReferences = (
+				850F97282D1CFC4400945740 /* XCRemoteSwiftPackageReference "iOSMegnetometer" */,
+				850F97392D1D354900945740 /* XCRemoteSwiftPackageReference "SwiftyPing" */,
+			);
 			productRefGroup = 854F4D512D1A57860088B04F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +220,11 @@
 			files = (
 				854F4D5D2D1A57870088B04F /* Assets.xcassets in Resources */,
 				854F4D602D1A57870088B04F /* Base in Resources */,
+				854F4D952D1AA2130088B04F /* data.plist in Resources */,
 				854F4D5B2D1A57860088B04F /* Base in Resources */,
+				854F4D9E2D1AADA10088B04F /* macVendors.plist in Resources */,
+				854F4D9D2D1AADA10088B04F /* iphoneModels.json in Resources */,
+				854F4D9F2D1AADA10088B04F /* macModels.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +236,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				854F4D582D1A57860088B04F /* ViewController.swift in Sources */,
+				854F4D6A2D1A581A0088B04F /* LocalNetworkDetector.swift in Sources */,
+				854F4D702D1A72CA0088B04F /* NetworkUtils.swift in Sources */,
 				854F4D542D1A57860088B04F /* AppDelegate.swift in Sources */,
+				850F972E2D1D044000945740 /* NetServiceExtension.swift in Sources */,
+				85DA720E2D1E42EA008F5589 /* HomeView.swift in Sources */,
 				854F4D562D1A57860088B04F /* SceneDelegate.swift in Sources */,
+				85445AAA2D1AB6830093F7F0 /* Device.swift in Sources */,
+				85DA72102D1E4673008F5589 /* DeviceService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,16 +393,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DemoDetect/DemoDetect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YUS8V6L945;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoDetect/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "use to find device";
+				INFOPLIST_KEY_NSLocationUsageDescription = "dung thoi";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "dung thoi";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.duc.DemoDetect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,16 +428,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DemoDetect/DemoDetect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YUS8V6L945;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoDetect/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "use to find device";
+				INFOPLIST_KEY_NSLocationUsageDescription = "dung thoi";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "dung thoi";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +479,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		850F97282D1CFC4400945740 /* XCRemoteSwiftPackageReference "iOSMegnetometer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Innovatewithapple/iOSMegnetometer.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		850F97392D1D354900945740 /* XCRemoteSwiftPackageReference "SwiftyPing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/samiyr/SwiftyPing.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		850F97292D1CFC4400945740 /* iOSMagnetometer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 850F97282D1CFC4400945740 /* XCRemoteSwiftPackageReference "iOSMegnetometer" */;
+			productName = iOSMagnetometer;
+		};
+		850F973A2D1D354900945740 /* SwiftyPing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 850F97392D1D354900945740 /* XCRemoteSwiftPackageReference "SwiftyPing" */;
+			productName = SwiftyPing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 854F4D482D1A57860088B04F /* Project object */;
 }
