@@ -25,6 +25,7 @@
 		854F4D9F2D1AADA10088B04F /* macModels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854F4D9C2D1AADA10088B04F /* macModels.plist */; };
 		85DA720E2D1E42EA008F5589 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA720D2D1E42EA008F5589 /* HomeView.swift */; };
 		85DA72102D1E4673008F5589 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA720F2D1E4673008F5589 /* DeviceService.swift */; };
+		85DA72132D1E6130008F5589 /* FlipBook in Frameworks */ = {isa = PBXBuildFile; productRef = 85DA72122D1E6130008F5589 /* FlipBook */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DA72132D1E6130008F5589 /* FlipBook in Frameworks */,
 				850F973B2D1D354900945740 /* SwiftyPing in Frameworks */,
 				850F972A2D1CFC4400945740 /* iOSMagnetometer in Frameworks */,
 			);
@@ -170,6 +172,7 @@
 			packageProductDependencies = (
 				850F97292D1CFC4400945740 /* iOSMagnetometer */,
 				850F973A2D1D354900945740 /* SwiftyPing */,
+				85DA72122D1E6130008F5589 /* FlipBook */,
 			);
 			productName = DemoDetect;
 			productReference = 854F4D502D1A57860088B04F /* DemoDetect.app */;
@@ -203,6 +206,7 @@
 			packageReferences = (
 				850F97282D1CFC4400945740 /* XCRemoteSwiftPackageReference "iOSMegnetometer" */,
 				850F97392D1D354900945740 /* XCRemoteSwiftPackageReference "SwiftyPing" */,
+				85DA72112D1E6130008F5589 /* XCRemoteSwiftPackageReference "FlipBook" */,
 			);
 			productRefGroup = 854F4D512D1A57860088B04F /* Products */;
 			projectDirPath = "";
@@ -497,6 +501,14 @@
 				kind = branch;
 			};
 		};
+		85DA72112D1E6130008F5589 /* XCRemoteSwiftPackageReference "FlipBook" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bgayman/FlipBook.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.10;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -509,6 +521,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 850F97392D1D354900945740 /* XCRemoteSwiftPackageReference "SwiftyPing" */;
 			productName = SwiftyPing;
+		};
+		85DA72122D1E6130008F5589 /* FlipBook */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85DA72112D1E6130008F5589 /* XCRemoteSwiftPackageReference "FlipBook" */;
+			productName = FlipBook;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

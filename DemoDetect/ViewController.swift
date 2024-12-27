@@ -10,12 +10,25 @@ import Network
 import iOSMagnetometer
 import SwiftyPing
 import SwiftUI
+import FlipBook
 
 class ViewController: UIViewController {
+    @IBOutlet weak var mainView: UIView!
+    let flipBook = FlipBook()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        flipBook.assetType = .video
+        flipBook.shouldUseReplayKit = false
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         configView()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+            self.flipBook.stop()
+        }
     }
     
     private func configView() {
@@ -23,14 +36,34 @@ class ViewController: UIViewController {
         let hostingView = UIHostingController(rootView: swiftUIView)
         self.addChild(hostingView)
         hostingView.didMove(toParent: self)
-        self.view.addSubview(hostingView.view)
+        self.mainView.addSubview(hostingView.view)
         hostingView.view.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            hostingView.view.topAnchor.constraint(equalTo: self.view.topAnchor),
-            hostingView.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            hostingView.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            hostingView.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            hostingView.view.topAnchor.constraint(equalTo: self.mainView.topAnchor),
+            hostingView.view.bottomAnchor.constraint(equalTo: self.mainView.bottomAnchor),
+            hostingView.view.leadingAnchor.constraint(equalTo: self.mainView.leadingAnchor),
+            hostingView.view.trailingAnchor.constraint(equalTo: self.mainView.trailingAnchor),
         ])
+        
+        flipBook.startRecording(mainView) { [weak self] result in
+                    
+                    // Switch on result
+                    switch result {
+                    case .success(let asset):
+                        // Switch on the asset that's returned
+                        switch asset {
+                        case .video(let url):
+                            // Do something with the video
+                            print(url)
+                        // We expect a video so do nothing for .livePhoto and .gif
+                        case .livePhoto, .gif:
+                            break
+                        }
+                    case .failure(let error):
+                        // Handle error in recording
+                        print(error)
+                    }
+                }
     }
 }
